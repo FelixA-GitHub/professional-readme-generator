@@ -1,14 +1,12 @@
 // TODO: Include packages needed for this application
 const fs = require('fs');
 const inquirer = require('inquirer');
+let path = require('doc-path');
 const generateMarkdown = require('./utils/generateMarkdown');
 
 // TODO: Create an array of questions for user input
-const promptQuestions = readmeData => {
-    if(!readmeData.projects){
-        readmeData.projects = [];
-    }
-    return inquirer.prompt([
+const userQuestions = [
+
         {
             type: 'input',
             name: 'title',
@@ -28,11 +26,6 @@ const promptQuestions = readmeData => {
             message: 'Provide a description of the project (Required).',
             validate: descriptionInput => {
                 if (descriptionInput) {
-                    console.log('Here is a guide: ');
-                    console.log('What was your motivation?');
-                    console.log('Why did you build this project? (Note: the answer is not "Because it was a homework assignment.)');
-                    console.log('What problem does it solve?');
-                    console.log('What did you learn?');
                     return true;
                 } else {
                     console.log('Please enter a project description!');
@@ -102,32 +95,32 @@ const promptQuestions = readmeData => {
 
             }
         }, 
-    ])
-    .then(projectData => 
-        readmeData.projects.push(projectData));
-        // return readmeData;
-        
-};
+    ]
 
 // TODO: Create a function to write README file
-const writeToFile = fileContent => {
-    return new Promise((resolve, reject) => {
-        fs.writeToFile('./dist/README.md', fileContent, err => {
-            if(err) {
-                reject(err);
-                return;
-            }
-            resolve({
-                ok: true,
-                message: 'File created!'
-            })
-        });
-    })
-}
+function writeToFile(fileName, data) {
+    return fs.writeFileSync('./dist/README.md', fileName, data);
+    }
+
+
 
 // TODO: Create a function to initialize app
-function init() {}
+function init() {
+    inquirer.prompt(userQuestions)
+        .then((userAnswers) => {
+            return generateMarkdown(userAnswers);
+        })
+        .then(readMeInfo => {
+            return writeToFile(readMeInfo);
+        })
+        .then(writeFileResponse => {
+            console.log(writeFileResponse);
+        })
+        .catch(err => {
+            console.log(err);
+        })
+    }
 
 // Function call to initialize app
 init();
-promptQuestions();
+
