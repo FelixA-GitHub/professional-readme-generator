@@ -9,7 +9,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "doc-path": "^3.0.3",
     "inquirer": "^8.2.2"
   }
 }
