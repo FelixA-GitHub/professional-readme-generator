@@ -29,31 +29,31 @@ function generateMarkdown(data) {
 
   
   ##description:
-  ${response.description}
+  ${data.description}
   
   ##installation:
-  ${response.installation}
+  ${data.installation}
   
   ##usage:
-  ${response.usage}
+  ${data.usage}
   
   ##contribution:
-  ${response.contribution}
+  ${data.contribution}
   
   ##test:
-  ${response.test}
+  ${data.test}
   
   ##licenses:
-  ${response.licenses}
+  ${data.licenses}
   
   ##email:
-  ${response.email}
+  ${data.email}
   
   ##username:
-  ${response.username}
+  ${data.username}
 
   ##profile:
-  ${response.profile}
+  ${data.profile}
   
   `;
 }
