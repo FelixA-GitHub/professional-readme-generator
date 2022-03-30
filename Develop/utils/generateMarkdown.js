@@ -1,13 +1,16 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
+  //badgeColor array and randomBadgeColor functionality added to license
   const badgeColor = ['brightgreen', 'red', 'yellow', 'blueviolet', 'blue'];
-  const randomBadgeColor = badgeColor[Math.floor(Math.random())];
+  const randomBadgeColor = badgeColor[Math.floor(Math.random() * 5)];
   
-  if (license !== 'none') {
+  //if license is not empty, badge will be returned
+  if (license !== '') {
     return `![License](https://img.shields.io/badge/license-${license}-${randomBadgeColor})`
-  } 
-  return ''
+  } else {
+    return ''
+  }
 }
 
 // TODO: Create a function that returns the license link
