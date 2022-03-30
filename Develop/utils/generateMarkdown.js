@@ -1,12 +1,13 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
-  let licenseInput = '';
-  // ,'MIT License','Mozilla Public License 2.0','Apache License 2.0','Boost Software License 1.0'
-  if (license == 'GNU AGPLv3') {
-    licenseInput = `![GPLv3 license](https://img.shields.io/badge/License-GPLv3-blue.svg)`
-    return licenseInput;
-  }
+  const badgeColor = ['brightgreen', 'red', 'yellow', 'blueviolet', 'blue'];
+  const randomBadgeColor = badgeColor[Math.floor(Math.random())];
+  
+  if (license !== 'none') {
+    return `![License](https://img.shields.io/badge/license-${license}-${randomBadgeColor})`
+  } 
+  return ''
 }
 
 // TODO: Create a function that returns the license link
