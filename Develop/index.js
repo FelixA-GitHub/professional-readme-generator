@@ -73,20 +73,23 @@ const userQuestions = [
             }
         },
         {
-            type: 'confirm',
+            type: 'input',
             name: 'test',
-            message: 'Would you like to test your knowledge?',
-            default: false,
-            if (test){
-                //test questions
-
+            message: 'Would you like to give test instructions?',
+            validate: testInput => {
+                if (testInput) {
+                    return true;
+                } else {
+                    console.log('Please provide test instructions!');
+                    return false;
+                }
             }
         },
         {
-            type: 'list',
+            type: 'checkbox',
             name: 'license',
             message: 'What licenses did you use?',
-            choices: ['','','','',''],
+            choices: ['GNU AGPLv3','MIT License','Mozilla Public License 2.0','Apache License 2.0','Boost Software License 1.0'],
             validate: licenseInput => {
                 if(licenseInput) {
                     return true;

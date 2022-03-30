@@ -1,6 +1,13 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-function renderLicenseBadge(license) {}
+function renderLicenseBadge(license) {
+  let licenseInput = '';
+  // ,'MIT License','Mozilla Public License 2.0','Apache License 2.0','Boost Software License 1.0'
+  if (license == 'GNU AGPLv3') {
+    licenseInput = `![GPLv3 license](https://img.shields.io/badge/License-GPLv3-blue.svg)`
+    return licenseInput;
+  }
+}
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
@@ -16,7 +23,7 @@ function generateMarkdown(data) {
   
   # ${data.title}
 
-  # Table of Content
+  # Table of Contents
   -[description](#description)
   -[installation](#installation)
   -[usage](#usage)
@@ -28,31 +35,31 @@ function generateMarkdown(data) {
   -[email](#email)
 
   
-  ##description:
+  ##Description:
   ${data.description}
   
-  ##installation:
+  ##Installation:
   ${data.installation}
   
-  ##usage:
+  ##Usage:
   ${data.usage}
   
-  ##contribution:
+  ##Contribution:
   ${data.contribution}
   
-  ##test:
+  ##Test:
   ${data.test}
   
-  ##licenses:
-  ${data.licenses}
+  ##Licenses:
+  ${renderLicenseBadge(data.license)}
   
-  ##email:
+  ##Email:
   ${data.email}
   
-  ##username:
+  ##Username:
   ${data.username}
 
-  ##profile:
+  ##Profile:
   ${data.profile}
   
   `;
