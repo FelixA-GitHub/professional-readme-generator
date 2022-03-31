@@ -1,6 +1,7 @@
 // TODO: Include packages needed for this application
 const fs = require('fs');
 const inquirer = require('inquirer');
+const { normalize } = require('path');
 const generateMarkdown = require('./utils/generateMarkdown');
 
 // TODO: Create an array of questions for user input
@@ -61,43 +62,20 @@ const userQuestions = [
         {
             type: 'input',
             name: 'contribution',
-            message: 'How can other developers can contribute?',
-            validate: contributionInput => {
-              if (contributionInput) {
-                return true;
-              } else {
-                console.log('Since you have not entered your own contribution info, we will include the Contribution Covenant.');
-                // area for inserting link or text from the Contribution Covenant
-                return false;
-              }
-            }
+            message: 'Would you like other developers to contribute?',
+            default: 'Find out how at https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md'
         },
         {
             type: 'input',
             name: 'test',
             message: 'Would you like to give test instructions?',
-            validate: testInput => {
-                if (testInput) {
-                    return true;
-                } else {
-                    console.log('Please provide test instructions!');
-                    return false;
-                }
-            }
+            default: 'No'
         },
         {
-            type: 'checkbox',
+            type: 'list',
             name: 'license',
-            message: 'What licenses did you use?',
-            choices: ['GNU AGPLv3','MIT License','Mozilla Public License 2.0','Apache License 2.0','Boost Software License 1.0'],
-            validate: licenseInput => {
-                if(licenseInput) {
-                    return true;
-                } else {
-                    console.log('Please select license/licenses!');
-                    return false;
-                }
-            }
+            message: 'What license did you use?',
+            choices: ['GNU AGPLv3','MIT License','Mozilla Public License 2.0','Apache License 2.0','Boost Software License 1.0','None']
         },
         {
             type: 'input',

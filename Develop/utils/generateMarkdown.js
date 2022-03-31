@@ -5,11 +5,11 @@ function renderLicenseBadge(license) {
   const badgeColor = ['brightgreen', 'red', 'yellow', 'blueviolet', 'blue'];
   const randomBadgeColor = badgeColor[Math.floor(Math.random() * 5)];
   
-  //if license is not empty, badge will be returned
-  if (license !== '') {
-    return `![License](https://img.shields.io/badge/license-${license}-${randomBadgeColor})`
+  //if license, badge will be returned
+  if (license !== 'None') {
+    return `[License](https://img.shields.io/badge/license-${license}-${randomBadgeColor})`;
   } else {
-    return ''
+    return '';
   }
 }
 
