@@ -1,7 +1,7 @@
 
   
   # PROFESSIONAL README GENERATOR
-  https://img.shields.io/badge/license-Apache2.0-brightgreen
+  ![License](https://img.shields.io/badge/license-MIT-orange)
 
   # Table of Contents
   * [Description](#description)
@@ -15,7 +15,7 @@
   
   ## Description:
   
-  Creates a professional README using fs.js, inquirer.js, and node.js
+  Creates a README.md file using fs.js, inquirer.js, and node.js
   
   ## Installation:
 
@@ -42,13 +42,13 @@
   
   ## License:
             
-    Copyright © Apache2.0
+    Copyright © MIT
 
-    Licensed under the Apache2.0 (the "License");
+    Licensed under the MIT (the "License");
     you may not use this file except in compliance with the License.
     You may obtain a copy of the License at
     
-      https://choosealicense.com/licenses/Apache2.0/
+      https://choosealicense.com/licenses/MIT/
     
     Unless required by applicable law or agreed to in writing, software
     distributed under the License is distributed on an "AS IS" BASIS,
