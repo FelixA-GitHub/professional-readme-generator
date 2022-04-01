@@ -74,7 +74,7 @@ const userQuestions = [
             type: 'list',
             name: 'license',
             message: 'What license did you use?',
-            choices: ['GNU AGPLv3','MIT License','Mozilla Public License 2.0','Apache License 2.0','Boost Software License 1.0','None']
+            choices: ['GNU-AGPLv3','MIT-License','Mozilla-Public-License-2.0','Apache-License-2.0','Boost-Software-License-1.0','None']
         },
         {
             type: 'input',
