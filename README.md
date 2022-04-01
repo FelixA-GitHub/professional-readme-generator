@@ -30,14 +30,21 @@
 
 ## Screenshots
 
-[Markdown1 Screenshot](./Develop/assets/img/generateMarkdown1.jpg)
-[Markdown2 Screenshot](./Develop/assets/img/generateMarkdown2.jpg)
-[Markdown3 Screenshot](./Develop/assets/img/generateMarkdown3.jpg)
-[Index1 Screenshot](./Develop/assets/img/index1.jpg)
-[Index2 Screenshot](./Develop/assets/img/index2.jpg)
-[Index3 Screenshot](./Develop/assets/img/index3.jpg)
-[README-dist Screenshot](./Develop/assets/img/README-dist.jpg)
-[README-workingtree Screenshot](./Develop/assets/img/README-workingtree1.jpg)
+![Markdown1 Screenshot](./Develop/assets/img/generateMarkdown1.jpg)
+
+![Markdown2 Screenshot](./Develop/assets/img/generateMarkdown2.jpg)
+
+![Markdown3 Screenshot](./Develop/assets/img/generateMarkdown3.jpg)
+
+![Index1 Screenshot](./Develop/assets/img/index1.jpg)
+
+![Index2 Screenshot](./Develop/assets/img/index2.jpg)
+
+![Index3 Screenshot](./Develop/assets/img/index3.jpg)
+
+![README-dist Screenshot](./Develop/assets/img/README-dist.jpg)
+
+![README-workingtree Screenshot](./Develop/assets/img/README-workingtree1.jpg)
 
 
 ## Git Repository
