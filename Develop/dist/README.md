@@ -1,6 +1,6 @@
 
   
-  # rtwe
+  # README Generator
 
   # Table of Contents
   -[description](#description)
@@ -15,13 +15,13 @@
 
   
   ##Description:
-  rtwert
+  README generated entirely through node.js
   
   ##Installation:
-  wrtwr
+  Run node through integrated terminal
   
   ##Usage:
-  wwert
+  Answer questions and generate your README 
   
   ##Contribution:
   Find out how at https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md
@@ -30,15 +30,15 @@
   No
   
   ##Licenses:
-  [License](https://img.shields.io/badge/license-GNU AGPLv3-red)
+  [License](https://img.shields.io/badge/license-GNU-AGPLv3-yellow)
   
   ##Email:
-  ert
+  elmalogato@hotmail.com
   
   ##Username:
-  wertwer
+  FelixA-GitHub
 
   ##Profile:
-  tw
+  FelixA-GitHub@GitHub.com
   
   
