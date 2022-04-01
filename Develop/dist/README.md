@@ -1,7 +1,7 @@
 
   
   # PROFESSIONAL README GENERATOR
-  https://img.shields.io/badge/license-Apache2.0-blue
+  https://img.shields.io/badge/license-Apache2.0-brightgreen
 
   # Table of Contents
   * [Description](#description)
@@ -9,32 +9,38 @@
   * [Usage](#usage)
   * [Contribution](#contribution)
   * [Test](#test)
-  
   * [License](#license)
-
   * [Questions](#questions)
 
   
   ## Description:
-  Creates a professional readme using inquirer.js, node.js, and fs.js
+  
+  Creates a professional README using fs.js, inquirer.js, and node.js
   
   ## Installation:
 
   ``  npm install (node package of choice)
   ``
+  
   ## Usage:
-  Run node index in its integrated terminal
+
+  Input this into its Integrated Terminal:
+  
+  ``  node index.js
+  ``
   
   ## Contribution:
-  Find out how at: 
-https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md
+
+  Find out how to contribute at:
+  
+  https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md
   
   ## Test:
   
   ``  npm run test
   ``  
   
-    ## License:
+  ## License:
             
     Copyright © Apache2.0
 
@@ -49,17 +55,18 @@ https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct
     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
     See the License for the specific language governing permissions and
     limitations under the License.
-    
+  
 
   ## Questions:
-  undefined
 
   Listed is my GitHub Username and Profile:
+  
   FelixA-GitHub
 
   https://github.com/FelixA-GitHub/
   
   If you have additional questions, you can reach me at:
+  
   elmalogato@hotmail.com
     
   

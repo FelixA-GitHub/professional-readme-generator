@@ -17,7 +17,7 @@ function renderLicenseBadge(license) {
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
   if (license !== 'None') {
-    return `\n  * [License](#license)`;
+    return `* [License](#license)`;
   } else {
     return '';
   }
@@ -57,23 +57,17 @@ function generateMarkdown(data) {
   ${renderLicenseBadge(data.license)}
 
   # Table of Contents
-
   * [Description](#description)
-
   * [Installation](#dependencies)
-
   * [Usage](#usage)
-
   * [Contribution](#contribution)
-
   * [Test](#test)
-
   ${renderLicenseLink(data.license)}
-
   * [Questions](#questions)
 
   
   ## Description:
+  
   ${data.description}
   
   ## Installation:
@@ -82,6 +76,7 @@ function generateMarkdown(data) {
   ${data.dependencies}
   \`\`\
 
+  
   ## Usage:
 
   Input this into its Integrated Terminal:
@@ -90,9 +85,11 @@ function generateMarkdown(data) {
   ${data.usage}
   \`\`\
 
+  
   ## Contribution:
 
   Find out how to contribute at:
+  
   ${data.contribution}
   
   ## Test:
@@ -106,11 +103,13 @@ function generateMarkdown(data) {
   ## Questions:
 
   Listed is my GitHub Username and Profile:
+  
   ${data.username}
 
   ${data.profile}
   
   If you have additional questions, you can reach me at:
+  
   ${data.email}
     
   `;
