@@ -55,7 +55,7 @@ const userQuestions = [
             type: 'input',
             name: 'contribution',
             message: 'Would you like other developers to contribute?',
-            default: 'Find out how at \nhttps://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md'
+            default: 'Find out how at: \nhttps://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md'
         },
         {
             type: 'input',
