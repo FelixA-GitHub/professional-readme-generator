@@ -85,15 +85,17 @@ const userQuestions = [
         {
             type: 'input',
             name: 'profile',
-            message: 'What is your GitHub profile link?',
+            message: 'What is your GitHub profile link?  (fill in GitHub username once more)',
             validate: profileInput => {
                 if(profileInput) {
+                    console.log(`https://github.com/${profileInput}/`);
                     return true;
                 } else {
-                    console.log('Please provide your GitHub profile link!');
+                    console.log('Please provide your GitHub username!');
                     return false;
                 }
             }
+                    
         },
         {
             type: 'input',
