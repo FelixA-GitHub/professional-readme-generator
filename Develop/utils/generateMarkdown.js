@@ -7,7 +7,7 @@ function renderLicenseBadge(license) {
   
   //if license, badge will be returned
   if (license !== 'None') {
-    return `[License](https://img.shields.io/badge/license-${license}-${randomBadgeColor})`;
+    return `https://img.shields.io/badge/license-${license}-${randomBadgeColor}`;
   } else {
     return '';
   }
@@ -17,7 +17,7 @@ function renderLicenseBadge(license) {
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
   if (license !== 'None') {
-    return `\n* [License](#license)\n`;
+    return `\n  * [License](#license)`;
   } else {
     return '';
   }
@@ -27,22 +27,23 @@ function renderLicenseLink(license) {
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
   if (license !== 'None') {
-    return `## License:
+    return `
+  ## License:
             
-            Copyright © ${license}
+    Copyright © ${license}
 
-            Licensed under the ${license} (the "License");
-            you may not use this file except in compliance with the License.
-            You may obtain a copy of the License at
-            
-              https://choosealicense.com/licenses/${license}/
-            
-            Unless required by applicable law or agreed to in writing, software
-            distributed under the License is distributed on an "AS IS" BASIS,
-            WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-            See the License for the specific language governing permissions and
-            limitations under the License.
-    `;
+    Licensed under the ${license} (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+    
+      https://choosealicense.com/licenses/${license}/
+    
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+  `;
   } else {
     return '';
   }
@@ -56,31 +57,45 @@ function generateMarkdown(data) {
   ${renderLicenseBadge(data.license)}
 
   # Table of Contents
+
   * [Description](#description)
+
   * [Installation](#dependencies)
+
   * [Usage](#usage)
+
   * [Contribution](#contribution)
+
   * [Test](#test)
+
   ${renderLicenseLink(data.license)}
+
   * [Questions](#questions)
 
   
-  ##Description:
+  ## Description:
   ${data.description}
   
-  ##Installation:
+  ## Installation:
 
   \`\`\
   ${data.dependencies}
   \`\`\
 
-  ##Usage:
-  ${data.usage}
+  ## Usage:
+
+  Input this into its Integrated Terminal:
   
-  ##Contribution:
+  \`\`\
+  ${data.usage}
+  \`\`\
+
+  ## Contribution:
+
+  Find out how to contribute at:
   ${data.contribution}
   
-  ##Test:
+  ## Test:
   
   \`\`\
   ${data.test}
@@ -88,10 +103,11 @@ function generateMarkdown(data) {
   
   ${renderLicenseSection(data.license)}
 
-  ##Questions:
+  ## Questions:
 
-  Listed below is my GitHub Username and Profile:
+  Listed is my GitHub Username and Profile:
   ${data.username}
+
   ${data.profile}
   
   If you have additional questions, you can reach me at:

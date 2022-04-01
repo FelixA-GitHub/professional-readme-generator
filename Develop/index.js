@@ -42,20 +42,13 @@ const userQuestions = [
             type: 'input',
             name: 'usage',
             message: 'What are the instructions for use?',
-            validate: usageInput => {
-                if(usageInput) {
-                    return true;
-                } else {
-                    console.log('Please provide instructions and examples for use!');
-                    return false;
-                }
-            }
+            default: 'node index.js'
         },
         {
             type: 'input',
             name: 'contribution',
             message: 'Would you like other developers to contribute?',
-            default: 'Find out how at: \nhttps://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md'
+            default: 'https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md'
         },
         {
             type: 'input',
@@ -85,10 +78,9 @@ const userQuestions = [
         {
             type: 'input',
             name: 'profile',
-            message: 'What is your GitHub profile link?  (fill in GitHub username once more)',
+            message: 'What is your GitHub profile link?',
             validate: profileInput => {
                 if(profileInput) {
-                    console.log(`https://github.com/${profileInput}/`);
                     return true;
                 } else {
                     console.log('Please provide your GitHub username!');

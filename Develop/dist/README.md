@@ -1,7 +1,7 @@
 
   
   # PROFESSIONAL README GENERATOR
-  [License](https://img.shields.io/badge/license-BoostSoftware1.0-brightgreen)
+  https://img.shields.io/badge/license-Apache2.0-blue
 
   # Table of Contents
   * [Description](#description)
@@ -10,51 +10,54 @@
   * [Contribution](#contribution)
   * [Test](#test)
   
-* [License](#license)
+  * [License](#license)
 
   * [Questions](#questions)
 
   
-  ##Description:
-  Creates a professional readme using inquire.js and node.js
+  ## Description:
+  Creates a professional readme using inquirer.js, node.js, and fs.js
   
-  ##Installation:
+  ## Installation:
 
   ``  npm install (node package of choice)
   ``
-  ##Usage:
+  ## Usage:
   Run node index in its integrated terminal
   
-  ##Contribution:
+  ## Contribution:
   Find out how at: 
 https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md
   
-  ##Test:
+  ## Test:
   
   ``  npm run test
   ``  
-  ## License:
+  
+    ## License:
             
-            Copyright © BoostSoftware1.0
+    Copyright © Apache2.0
 
-            Licensed under the BoostSoftware1.0 (the "License");
-            you may not use this file except in compliance with the License.
-            You may obtain a copy of the License at
-            
-              https://choosealicense.com/licenses/BoostSoftware1.0/
-            
-            Unless required by applicable law or agreed to in writing, software
-            distributed under the License is distributed on an "AS IS" BASIS,
-            WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-            See the License for the specific language governing permissions and
-            limitations under the License.
+    Licensed under the Apache2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+    
+      https://choosealicense.com/licenses/Apache2.0/
+    
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
     
 
-  ##Questions:
+  ## Questions:
+  undefined
 
-  Listed below is my GitHub Username and Profile:
+  Listed is my GitHub Username and Profile:
   FelixA-GitHub
-  FelixA-GitHub
+
+  https://github.com/FelixA-GitHub/
   
   If you have additional questions, you can reach me at:
   elmalogato@hotmail.com
