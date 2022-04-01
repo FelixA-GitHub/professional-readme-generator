@@ -34,21 +34,14 @@ const userQuestions = [
         },
         {
             type: 'input',
-            name: 'installation',
+            name: 'dependencies',
             message: 'What are the steps required to get the development environment running?',
-            validate: installationInput => {
-                if(installationInput) {
-                    return true;
-                } else {
-                    console.log('Please enter your steps for installation!');
-                    return false;
-                }
-            }
+            default: 'npm install (node package of choice)'
         },
         {
             type: 'input',
             name: 'usage',
-            message: 'What are the instructions and examples for use?',
+            message: 'What are the instructions for use?',
             validate: usageInput => {
                 if(usageInput) {
                     return true;
@@ -62,19 +55,19 @@ const userQuestions = [
             type: 'input',
             name: 'contribution',
             message: 'Would you like other developers to contribute?',
-            default: 'Find out how at https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md'
+            default: 'Find out how at \nhttps://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md'
         },
         {
             type: 'input',
             name: 'test',
-            message: 'Would you like to give test instructions?',
-            default: 'No'
+            message: 'How would you run tests?',
+            default: 'npm run test'
         },
         {
             type: 'list',
             name: 'license',
             message: 'What license did you use?',
-            choices: ['GNU-AGPLv3','MIT-License','Mozilla-Public-License-2.0','Apache-License-2.0','Boost-Software-License-1.0','None']
+            choices: ['AGPLv3','MIT','MozillaPublic2.0','Apache2.0','BoostSoftware1.0','None']
         },
         {
             type: 'input',

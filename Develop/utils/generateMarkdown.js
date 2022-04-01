@@ -32,24 +32,25 @@ function generateMarkdown(data) {
   return `
   
   # ${data.title}
+  ${renderLicenseBadge(data.license)}
 
   # Table of Contents
-  -[description](#description)
-  -[installation](#installation)
-  -[usage](#usage)
-  -[contribution](#contribution)
-  -[test](#test)
-  -[licenses](#licenses)
-  -[username](#username)
-  -[profile](#profile)
-  -[email](#email)
+  * [description](#description)
+  * [installation](#dependencies)
+  * [usage](#usage)
+  * [contribution](#contribution)
+  * [test](#test)
+  * [licenses](#licenses)
+  * [username](#username)
+  * [profile](#profile)
+  * [email](#email)
 
   
   ##Description:
   ${data.description}
   
   ##Installation:
-  ${data.installation}
+  ${data.dependencies}
   
   ##Usage:
   ${data.usage}
@@ -61,7 +62,7 @@ function generateMarkdown(data) {
   ${data.test}
   
   ##Licenses:
-  ${renderLicenseBadge(data.license)}
+  ${renderLicenseLink(data.license)}
   
   ##Email:
   ${data.email}
