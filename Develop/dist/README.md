@@ -1,7 +1,7 @@
 
   
-  # agafg
-  ![License](https://img.shields.io/badge/license-Apache2.0-brightgreen)
+  # PROFESSIONAL README GENERATOR
+  ![License](https://img.shields.io/badge/license-Apache2.0-red)
 
   # Table of Contents
   * [Description](#description)
@@ -15,7 +15,7 @@
   
   ## Description:
   
-  sfgsfdg
+  Creates a README file using fs.js, inquirer.js, and node.js
   
   ## Installation:
 
@@ -61,12 +61,12 @@
 
   Listed is my GitHub Username and Profile:
   
-  sdfg
+  FelixA-GitHub
 
-  sfdg
+  https://github.com/FelixA-GitHub
   
   If you have additional questions, you can reach me at:
   
-  sfg
+  elmalogato@hotmail.com
     
   
