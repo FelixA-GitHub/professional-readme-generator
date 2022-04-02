@@ -1,7 +1,7 @@
 
   
-  # agag
-  ![License](https://img.shields.io/badge/license-Apache2.0-red)
+  # adgsfdg
+  ![License](https://img.shields.io/badge/license-MPL2.0-red)
 
   # Table of Contents
   * [Description](#description)
@@ -15,7 +15,7 @@
   
   ## Description:
   
-  gafg
+  gdhghd
   
   ## Installation:
 
@@ -42,13 +42,13 @@
   
   ## License:
             
-    Copyright © Apache2.0
+    Copyright © MPL2.0
 
-    Licensed under the Apache2.0 (the "License");
+    Licensed under the MPL2.0 (the "License");
     you may not use this file except in compliance with the License.
     You may obtain a copy of the License at
     
-      https://choosealicense.com/licenses/apache2.0/
+      https://choosealicense.com/licenses/mpl-2-.-0/
     
     Unless required by applicable law or agreed to in writing, software
     distributed under the License is distributed on an "AS IS" BASIS,
@@ -61,12 +61,12 @@
 
   Listed is my GitHub Username and Profile:
   
-  sfghss
+  djdfghj
 
-  hdfgh
+  djdf
   
   If you have additional questions, you can reach me at:
   
-  dfgjd
+  gfjh
     
   

@@ -33,6 +33,7 @@ function renderLicenseLink(license) {
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
+  let stringsAndNumbers = license.split(/(\d+)/).filter(el => el != "").join("-");
   if (license !== 'None') {
     return `
   ## License:
@@ -43,7 +44,7 @@ function renderLicenseSection(license) {
     you may not use this file except in compliance with the License.
     You may obtain a copy of the License at
     
-      https://choosealicense.com/licenses/${license.toLowerCase()}/
+      https://choosealicense.com/licenses/${stringsAndNumbers.toLowerCase()}/
     
     Unless required by applicable law or agreed to in writing, software
     distributed under the License is distributed on an "AS IS" BASIS,
