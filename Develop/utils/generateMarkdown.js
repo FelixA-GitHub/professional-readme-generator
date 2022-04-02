@@ -11,10 +11,13 @@ function renderLicenseBadge(license) {
                       'lightgrey'
                       ];
   const randomBadgeColor = badgeColor[Math.floor(Math.random() * 7)];
+  //this 
+  let removeLicenseHyphen = license.split(/-/).filter(el => el != "").join("");
+
   
   //if license, badge will be returned
   if (license !== 'None') {
-    return `![License](https://img.shields.io/badge/license-${license}-${randomBadgeColor})`;
+    return `![License](https://img.shields.io/badge/license-${removeLicenseHyphen}-${randomBadgeColor})`;
   } else {
     return '';
   }
@@ -33,7 +36,6 @@ function renderLicenseLink(license) {
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
-  let stringsAndNumbers = license.split(/(\d+)/).filter(el => el != "").join("-");
   if (license !== 'None') {
     return `
   ## License:
@@ -44,7 +46,7 @@ function renderLicenseSection(license) {
     you may not use this file except in compliance with the License.
     You may obtain a copy of the License at
     
-      https://choosealicense.com/licenses/${stringsAndNumbers.toLowerCase()}/
+      https://choosealicense.com/licenses/${license.toLowerCase()}/
     
     Unless required by applicable law or agreed to in writing, software
     distributed under the License is distributed on an "AS IS" BASIS,

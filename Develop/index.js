@@ -60,7 +60,7 @@ const userQuestions = [
             type: 'list',
             name: 'license',
             message: 'What license did you use?',
-            choices: ['AGPL3.0','MIT','MPL2.0','Apache2.0','BSL1.0','None']
+            choices: ['AGPL-3.0','MIT','MPL-2.0','Apache-2.0','BSL-1.0','None']
         },
         {
             type: 'input',
