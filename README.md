@@ -42,7 +42,7 @@
 
 ## Walkthrough Video
 
-- 
+- [README Generator Walkthrough](https://drive.google.com/file/d/1MWMwylvRgXW_odNrTaj6BeVaCFLrF8Rj/view)
 
 ## Screenshots
 
